@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khoirul Ikhwan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="custom-cursor"></div>
+    
+    <nav class="fixed w-full bg-[#0A192F] bg-opacity-90 z-50 shadow-lg">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-bold text-[#64FFDA]">Khoirul Ikhwan</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-[#CCD6F6] hover:text-[#64FFDA] transition">Home</a>
+                    <a href="#about" class="nav-link text-[#CCD6F6] hover:text-[#64FFDA] transition">About</a>
+                    <a href="#projects" class="nav-link text-[#CCD6F6] hover:text-[#64FFDA] transition">Projects</a>
+                    <a href="#contact" class="nav-link text-[#CCD6F6] hover:text-[#64FFDA] transition">Contact</a>
+                </div>
+                <button class="md:hidden text-[#CCD6F6]" id="menu-toggle">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="md:hidden hidden bg-[#112240] w-full py-4" id="mobile-menu">
+            <div class="container mx-auto px-6 flex flex-col space-y-4">
+                <a href="#home" class="nav-link text-[#CCD6F6] hover:text-[#64FFDA] transition">Home</a>
+                <a href="#about" class="nav-link text-[#CCD6F6] hover:text-[#64FFDA] transition">About</a>
+                <a href="#projects" class="nav-link text-[#CCD6F6] hover:text-[#64FFDA] transition">Projects</a>
+                <a href="#contact" class="nav-link text-[#CCD6F6] hover:text-[#64FFDA] transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="home" class="section flex items-center justify-center bg-[#0A192F]">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 fade-in">
+                    <h1 class="text-4xl md:text-6xl font-bold text-[#CCD6F6] mb-4">Hi, I'm <span class="text-[#64FFDA]">Khoirul Ikhwan</span></h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold text-[#8892B0] mb-6">Informatics student passionate about solving real-world problems through code</h2>
+                    <div class="flex space-x-4">
+                        <a href="#projects" class="bg-[#64FFDA] text-[#0A192F] px-6 py-3 rounded font-medium hover:bg-opacity-90 transition">View My Project</a>
+                        <a href="#contact" class="border border-[#64FFDA] text-[#64FFDA] px-6 py-3 rounded font-medium hover:bg-[#64FFDA] hover:bg-opacity-10 transition">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center fade-in">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80">
+                        <div class="absolute inset-0 bg-[#64FFDA] rounded-full opacity-20 blur-xl"></div>
+                        <div class="relative w-full h-full flex items-center justify-center">
+                            <img src="img\profile.png" 
+                                 alt="Wayn" 
+                                 class="w-48 h-48 md:w-64 md:h-64 rounded-full object-cover border-4 border-[#64FFDA] floating">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="section bg-[#112240]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#CCD6F6] mb-12 text-center fade-in">
+                <span class="text-[#64FFDA]">01.</span> About Me
+            </h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 fade-in">
+                    <div class="mb-8">
+                        <p class="text-[#8892B0] mb-4">My name is Khoirul Ikhwan, and I am a third-year student at Gunadarma University, pursuing a degree in Informatics. My academic journey has provided me with a robust foundation in core computer science principles, including data structures, algorithms, and database management. This theoretical knowledge has fueled my passion for technology and serves as the bedrock for the practical skills I have developed and continue to refine.</p>
+                        <p class="text-[#8892B0] mb-4">My primary focus lies in software development and data analysis, with a strong proficiency in Python. I actively translate theory into practice through hands-on projects, such as developing a book recommendation system that utilizes vector search and modern frameworks like LangChain. This experience has sharpened my abilities in data processing, model implementation, and deploying functional, end-to-end applications. I am driven by the challenge of transforming complex data into insightful and intelligent solutions.</p>
+                        <p class="text-[#8892B0]">I am now actively seeking an internship opportunity for the upcoming semester to contribute to a professional development team. My career aspiration is to grow as a Back End Developer or Junior Programmer, roles where I can apply my skills in system logic, API development, and database interaction. I am a quick learner, highly motivated, and eager to tackle real-world challenges while contributing meaningfully to a team's success.</p>
+                    </div>
+                    
+                    
+                    
+                    <a href="img/cv" download="Resume-Khoirul Ikhwan.pdf" class="inline-block border border-[#64FFDA] text-[#64FFDA] px-6 py-3 rounded font-medium hover:bg-[#64FFDA] hover:bg-opacity-10 transition fade-in">
+                    Download Resume
+                    </a>
+                </div>
+                
+                <div class="md:w-1/2 fade-in">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="skill-tag bg-[#0A192F] p-4 rounded-lg border border-[#1E2A47] transition cursor-default">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-laptop-code text-[#64FFDA] text-xl mr-2"></i>
+                                <h4 class="text-[#CCD6F6] font-medium">Programming Languages</h4>
+                            </div>
+                            <p class="text-sm text-[#8892B0]">Python, SQL, JavaScript (Basic)</p>
+                        </div>
+                        <div class="skill-tag bg-[#0A192F] p-4 rounded-lg border border-[#1E2A47] transition cursor-default">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-robot text-[#64FFDA] text-xl mr-2"></i>
+                                <h4 class="text-[#CCD6F6] font-medium">AI / Machine Learning</h4>
+                            </div>
+                            <p class="text-sm text-[#8892B0]">LangChain, Vector Search, NLP Basics</p>
+                        </div>
+                        <div class="skill-tag bg-[#0A192F] p-4 rounded-lg border border-[#1E2A47] transition cursor-default">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-chart-simple text-[#64FFDA] text-xl mr-2"></i>
+                                <h4 class="text-[#CCD6F6] font-medium">Data Processing & Tools</h4>
+                            </div>
+                            <p class="text-sm text-[#8892B0]">Pandas, Web Scraping</p>
+                        </div>
+                        <div class="skill-tag bg-[#0A192F] p-4 rounded-lg border border-[#1E2A47] transition cursor-default">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-gear text-[#64FFDA] text-xl mr-2"></i>
+                                <h4 class="text-[#CCD6F6] font-medium">Back-End Development</h4>
+                            </div>
+                            <p class="text-sm text-[#8892B0]">Database Management (MySQL), System Logic</p>
+                        </div>
+                        <div class="skill-tag bg-[#0A192F] p-4 rounded-lg border border-[#1E2A47] transition cursor-default">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-rocket text-[#64FFDA] text-xl mr-2"></i>
+                                <h4 class="text-[#CCD6F6] font-medium">App Frameworks & Deployment</h4>
+                            </div>
+                            <p class="text-sm text-[#8892B0]">Gradio, Streamlit, Hugging Face</p>
+                        </div>
+                        <div class="skill-tag bg-[#0A192F] p-4 rounded-lg border border-[#1E2A47] transition cursor-default">
+                            <div class="flex items-center mb-2">
+                                <i class="fas fa-desktop text-[#64FFDA] text-xl mr-2"></i>
+                                <h4 class="text-[#CCD6F6] font-medium">IT Fundamentals</h4>
+                            </div>
+                            <p class="text-sm text-[#8892B0]">Networking Basics, Operating Systems (Windows), Troubleshooting</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="projects" class="section bg-[#0A192F]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#CCD6F6] mb-12 text-center fade-in">
+                <span class="text-[#64FFDA]">02.</span> Featured Projects
+            </h2>
+            
+            
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card rounded-lg overflow-hidden relative fade-in">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img\patrikkul.png" 
+                             alt="analysis-sentiment" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <div class="project-overlay absolute inset-0 bg-[#0A192F] bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition duration-300 transform translate-y-4">
+                            <h3 class="text-xl font-bold text-[#CCD6F6] mb-2">Public Sentiment Analysis Dashboard</h3>
+                            <p class="text-[#8892B0] text-center mb-4">Sentiment Analysis of Public Opinion on Social Media X Regarding the National Team Coach Appointment</p>
+                            <div class="flex flex-wrap justify-center gap-2 mb-4">
+                                <span class="text-xs px-2 py-1 bg-[#112240] text-[#64FFDA] rounded">Python</span>
+                                <span class="text-xs px-2 py-1 bg-[#112240] text-[#64FFDA] rounded">Streamlit</span>
+                            </div>
+                            <a href="https://github.com/Ikhwannt/KA" target="_blank" class="text-[#64FFDA] border border-[#64FFDA] px-4 py-2 rounded hover:bg-[#64FFDA] hover:bg-opacity-10 transition">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-[#112240]">
+                        <h3 class="text-lg font-semibold text-[#CCD6F6]">Sentiment Analysis Dashboard</h3>
+                        <p class="text-sm text-[#8892B0]">Data Analysis & Visualization • 2025</p>
+                    </div>
+                </div>
+                
+                <div class="project-card rounded-lg overflow-hidden relative fade-in">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/portto.png" 
+                             alt="Portofolio-Web" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <div class="project-overlay absolute inset-0 bg-[#0A192F] bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition duration-300 transform translate-y-4">
+                            <h3 class="text-xl font-bold text-[#CCD6F6] mb-2">Personal Portfolio Website</h3>
+                            <p class="text-[#8892B0] text-center mb-4">A responsive portfolio developed with HTML, CSS, and JavaScript, featuring interactive elements and a mobile-first design.</p>
+                            <div class="flex flex-wrap justify-center gap-2 mb-4">
+                                <span class="text-xs px-2 py-1 bg-[#112240] text-[#64FFDA] rounded">HTML5</span>
+                                <span class="text-xs px-2 py-1 bg-[#112240] text-[#64FFDA] rounded">CSS3</span>
+                                <span class="text-xs px-2 py-1 bg-[#112240] text-[#64FFDA] rounded">JavaScript</span>
+                            </div>
+                            <a href="#" class="text-[#64FFDA] border border-[#64FFDA] px-4 py-2 rounded hover:bg-[#64FFDA] hover:bg-opacity-10 transition">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-[#112240]">
+                        <h3 class="text-lg font-semibold text-[#CCD6F6]">Personal Portfolio Website</h3>
+                        <p class="text-sm text-[#8892B0]">Frontend Development • 2025</p>
+                    </div>
+                </div>
+                
+                <div class="project-card rounded-lg overflow-hidden relative fade-in">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="img/br .png" 
+                             alt="Book Recommender System" 
+                             class="w-full h-full object-cover transition duration-500 hover:scale-105">
+                        <div class="project-overlay absolute inset-0 bg-[#0A192F] bg-opacity-90 flex flex-col justify-center items-center p-6 opacity-0 transition duration-300 transform translate-y-4">
+                            <h3 class="text-xl font-bold text-[#CCD6F6] mb-2">Book Recommender System</h3>
+                            <p class="text-[#8892B0] text-center mb-4">A Book semantic search with personalized recommender feature.</p>
+                            <div class="flex flex-wrap justify-center gap-2 mb-4">
+                                <span class="text-xs px-2 py-1 bg-[#112240] text-[#64FFDA] rounded">Python</span>
+                                <span class="text-xs px-2 py-1 bg-[#112240] text-[#64FFDA] rounded">Huggingface Space</span>
+                                <span class="text-xs px-2 py-1 bg-[#112240] text-[#64FFDA] rounded">Gradio</span>
+                            </div>
+                            <a href="https://huggingface.co/spaces/ikhwannt/book-recomender" class="text-[#64FFDA] border border-[#64FFDA] px-4 py-2 rounded hover:bg-[#64FFDA] hover:bg-opacity-10 transition">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-4 bg-[#112240]">
+                        <h3 class="text-lg font-semibold text-[#CCD6F6]">Book Recommender System</h3>
+                        <p class="text-sm text-[#8892B0]">LLM project • 2025</p>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </section>
+    
+    <section id="contact" class="section bg-[#112240]">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-[#CCD6F6] mb-12 text-center fade-in">
+                <span class="text-[#64FFDA]">03.</span> Get In Touch
+            </h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <p class="text-[#8892B0] text-center mb-12 fade-in">
+                    I'm currently looking for new opportunities in UX/UI design. Whether you have a question or just want to say hi, I'll do my best to get back to you!
+                </p>
+                
+                <form action="https://formspree.io/f/manjryne" method="POST" class="space-y-6 fade-in"> 
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-[#CCD6F6] mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 bg-[#0A192F] border border-[#1E2A47] rounded focus:outline-none focus:border-[#64FFDA] text-[#CCD6F6] placeholder-[#8892B0]" placeholder="Your name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-[#CCD6F6] mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-[#0A192F] border border-[#1E2A47] rounded focus:outline-none focus:border-[#64FFDA] text-[#CCD6F6] placeholder-[#8892B0]" placeholder="your.email@example.com" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="subject" class="block text-sm font-medium text-[#CCD6F6] mb-2">Subject</label>
+                    <input type="text" id="subject" name="subject" class="w-full px-4 py-3 bg-[#0A192F] border border-[#1E2A47] rounded focus:outline-none focus:border-[#64FFDA] text-[#CCD6F6] placeholder-[#8892B0]" placeholder="What's this about?" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-[#CCD6F6] mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 bg-[#0A192F] border border-[#1E2A47] rounded focus:outline-none focus:border-[#64FFDA] text-[#CCD6F6] placeholder-[#8892B0]" placeholder="Your message here..." required></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-[#64FFDA] text-[#0A192F] px-8 py-3 rounded font-medium hover:bg-opacity-90 transition">
+                        Send Message
+                    </button>
+                </div>
+            </form>
+                
+                <div class="mt-16 flex flex-col items-center fade-in">
+                    <h3 class="text-xl font-semibold text-[#CCD6F6] mb-6">Or find me on</h3>
+                    <div class="flex space-x-6">
+                        <a href="https://www.linkedin.com/in/khoirul-ikhwan/" target="_blank" class="text-[#8892B0] hover:text-[#64FFDA] transition text-2xl">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/ikhwannt/" target="_blank" class="text-[#8892B0] hover:text-[#64FFDA] transition text-2xl">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/Ikhwannt" target="_blank" class="text-[#8892B0] hover:text-[#64FFDA] transition text-2xl">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/ikhwannt" target="_blank" class="text-[#8892B0] hover:text-[#64FFDA] transition text-2xl">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="mt-8 text-[#8892B0]">
+                        <p>Or email me directly at <a href="mailto:khoirulikhwan203@gmail.com" class="text-[#64FFDA] hover:underline">khoirulikhwan203@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-[#0A192F] py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col items-center">
+                <div class="mb-4">
+                <div class="text-[#8892B0] text-sm text-center">        
+                    <p class="mt-1">© 2025 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
